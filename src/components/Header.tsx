@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 
 const navLinks = [
   { href: "#solutions", label: "Platforms" },
@@ -9,15 +10,10 @@ const navLinks = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/80">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="font-display text-xl font-semibold tracking-tight text-slate-900 dark:text-white"
-        >
-          Meridian Platforms
-        </Link>
-        <nav className="hidden items-center gap-8 md:flex">
+    <header className="sticky top-0 z-50 border-b border-slate-200/90 bg-white/90 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/90">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+        <Logo size="header" className="text-slate-900 dark:text-white" />
+        <nav className="hidden items-center gap-7 md:flex">
           {navLinks.map(({ href, label }) => (
             <Link
               key={href}
@@ -28,14 +24,12 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            href="#contact"
-            className="rounded-full bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600"
-          >
-            Get in touch
-          </Link>
-        </div>
+        <Link
+          href="#contact"
+          className="rounded-lg bg-teal-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600"
+        >
+          Get in touch
+        </Link>
       </div>
     </header>
   );

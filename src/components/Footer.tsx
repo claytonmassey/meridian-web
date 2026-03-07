@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 
 const footerLinks = {
   product: [
@@ -19,17 +20,12 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50 dark:border-slate-800 dark:bg-slate-900/50">
+    <footer className="border-t border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-950">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link
-              href="/"
-              className="font-display text-lg font-semibold text-slate-900 dark:text-white"
-            >
-              Meridian Platforms
-            </Link>
-            <p className="mt-3 max-w-sm text-sm text-slate-600 dark:text-slate-400">
+            <Logo size="footer" className="text-slate-900 dark:text-white" />
+            <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-600 dark:text-slate-400">
               We design and deploy AI-powered operational platforms that
               integrate into business workflows—helping organizations move from
               experimentation to real-world deployment.
@@ -39,7 +35,7 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Product
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-2.5">
               {footerLinks.product.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -56,7 +52,7 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
               Company
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-2.5">
               {footerLinks.company.map(({ href, label }) => (
                 <li key={href}>
                   <Link
@@ -70,13 +66,13 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 dark:border-slate-800 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 dark:border-slate-800 sm:flex-row">
           <div className="flex gap-6">
             {footerLinks.legal.map(({ href, label }) => (
               <Link
                 key={href}
                 href={href}
-                className="text-xs text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300"
+                className="text-xs text-slate-500 transition-colors hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300"
               >
                 {label}
               </Link>

@@ -29,11 +29,11 @@ export function Solutions() {
   return (
     <section
       id="solutions"
-      className="border-t border-slate-200 bg-slate-50/50 py-20 dark:border-slate-800 dark:bg-slate-900/30 md:py-28"
+      className="border-t border-slate-200 bg-white py-16 dark:border-slate-800 dark:bg-slate-950 md:py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+          <h2 className="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">
             <AnimateLetters
               text="Platforms that run inside the business"
               as="span"
@@ -41,48 +41,52 @@ export function Solutions() {
               amount={0.3}
             />
           </h2>
-          <ScrollReveal amount={0.2}>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+          <ScrollReveal amount={0.2} delay={0.05}>
+            <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
               We design and deploy AI-powered operational systems that integrate
               with your workflows—not demos or prototypes, but production-ready
               infrastructure.
             </p>
           </ScrollReveal>
         </div>
-        <div className="mt-16 space-y-24">
+        <div className="mt-14 space-y-20">
           {solutions.map((item, i) => (
             <div
               key={item.title}
-              className={`grid items-center gap-12 md:grid-cols-2 md:gap-16 ${
+              className={`grid items-center gap-10 md:grid-cols-2 md:gap-14 ${
                 i % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
               <ScrollReveal
-                delay={i * 0.1}
+                delay={i * 0.08}
                 className={i % 2 === 1 ? "md:order-2" : ""}
               >
-                <h3 className="font-display text-2xl font-semibold text-slate-900 dark:text-white">
-                  <AnimateLetters
-                    text={item.title}
-                    as="span"
-                    amount={0.2}
-                    delayPerLetter={0.025}
-                  />
-                </h3>
-                <p className="mt-4 text-slate-600 dark:text-slate-400">
-                  {item.description}
-                </p>
+                <div className="rounded-2xl border border-slate-200 bg-slate-50/50 p-6 dark:border-slate-800 dark:bg-slate-900/30 md:p-8">
+                  <h3 className="font-display text-xl font-semibold text-slate-900 dark:text-white sm:text-2xl">
+                    <AnimateLetters
+                      text={item.title}
+                      as="span"
+                      amount={0.2}
+                      delayPerLetter={0.025}
+                    />
+                  </h3>
+                  <p className="mt-4 text-slate-600 dark:text-slate-400">
+                    {item.description}
+                  </p>
+                </div>
               </ScrollReveal>
               <ScrollReveal
-                delay={i * 0.1 + 0.1}
-                y={24}
+                delay={i * 0.08 + 0.05}
+                y={16}
                 className={i % 2 === 1 ? "md:order-1" : ""}
               >
-                <ImagePlaceholder
-                  aspectRatio="video"
-                  label={item.imageLabel}
-                  className="w-full"
-                />
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-900/50">
+                  <ImagePlaceholder
+                    aspectRatio="video"
+                    label={item.imageLabel}
+                    className="w-full"
+                  />
+                </div>
               </ScrollReveal>
             </div>
           ))}

@@ -32,11 +32,8 @@ export function AnimateLetters({
     <motion.span
       key={`${globalIndex}-${char}`}
       className="inline-block"
-      initial={{ opacity: 0, y: 10 }}
-      animate={{
-        opacity: isInView ? 1 : 0,
-        y: isInView ? 0 : -6,
-      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isInView ? 1 : 0 }}
       transition={{
         duration: 0.25,
         delay: isInView
