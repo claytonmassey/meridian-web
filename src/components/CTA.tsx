@@ -23,8 +23,9 @@ export function CTA() {
           </h2>
           <ScrollReveal amount={0.2} delay={0.05}>
             <p className="mt-4 text-base text-slate-600 dark:text-slate-400">
-              Tell us about your goals. We&apos;ll help you map a path from AI
-              experimentation to systems that run inside your business.
+              We start by understanding how you operate. Tell us about your
+              business—we&apos;ll map the real problem and build a tailored path
+              forward.
             </p>
           </ScrollReveal>
         </div>

@@ -15,7 +15,7 @@ export function About() {
           <div>
             <h2 className="font-display text-2xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-3xl">
               <AnimateLetters
-                text="The gap between AI experiments and real deployment"
+                text="We start with how you operate"
                 as="span"
                 className="block"
                 amount={0.2}
@@ -24,19 +24,18 @@ export function About() {
             </h2>
             <ScrollReveal amount={0.2} delay={0.05}>
               <p className="mt-5 text-base leading-relaxed text-slate-600 dark:text-slate-400">
-                Most organizations are experimenting with AI but struggle to
-                move from pilots to operational systems. A meridian is a
-                reference line for navigation—Meridian Platforms acts as that
-                reference point, helping you orient operations around AI and
-                deploy systems that work inside real business workflows.
+                We don’t lead with a product. We come in, monitor how your
+                company operates—where work gets stuck, how decisions get made,
+                what data matters—and then we build tailored AI solutions that
+                slot into the way you already work.
               </p>
             </ScrollReveal>
             <ScrollReveal amount={0.2} delay={0.1}>
               <ul className="mt-6 space-y-3">
                 {[
-                  "AI-powered operational systems that integrate into your workflows",
-                  "Designed for production—not demos or one-off prototypes",
-                  "Outcome-focused: we deploy, iterate, and support after launch",
+                  "We observe and map your operations before we propose anything",
+                  "Every platform we build is tailored to your workflows and data",
+                  "We deploy, integrate, and support—so it actually runs in production",
                 ].map((item) => (
                   <li
                     key={item}

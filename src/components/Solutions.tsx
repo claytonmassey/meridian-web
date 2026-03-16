@@ -43,9 +43,9 @@ export function Solutions() {
           </h2>
           <ScrollReveal amount={0.2} delay={0.05}>
             <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
-              We design and deploy AI-powered operational systems that integrate
-              with your workflows—not demos or prototypes, but production-ready
-              infrastructure.
+              After we understand how you operate, we design and deploy
+              AI-powered platforms tailored to your business—not off-the-shelf
+              products, but production-ready infrastructure built for you.
             </p>
           </ScrollReveal>
         </div>

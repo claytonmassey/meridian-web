@@ -20,9 +20,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Meridian Platforms | From AI Experiments to Operational AI",
+  title: "Meridian Platforms | Tailored AI Infrastructure",
   description:
-    "Meridian Platforms designs and deploys AI-powered operational systems that integrate into business workflows—helping organizations move from experimentation to real-world deployment.",
+    "We don't just offer solutions—we monitor how your company operates and build AI infrastructure tailored to the way you work.",
 };
 
 export default function RootLayout({

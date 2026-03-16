@@ -2,9 +2,11 @@ import Link from "next/link";
 import { Logo } from "@/components/Logo";
 
 const navLinks = [
-  { href: "#solutions", label: "Platforms" },
+  { href: "#adoption-gap", label: "The gap" },
+  { href: "#why-meridian", label: "Why Meridian" },
+  { href: "#solutions", label: "Solutions" },
   { href: "#features", label: "Capabilities" },
-  { href: "#about", label: "Why Meridian" },
+  { href: "#about", label: "How we work" },
   { href: "#contact", label: "Contact" },
 ];
 

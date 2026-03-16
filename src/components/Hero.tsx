@@ -42,8 +42,8 @@ export function Hero() {
           </ScrollReveal>
           <ScrollReveal amount={0.2} delay={0.15}>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-600">
-              Building the operational systems that power the AI-enabled
-              enterprise.
+              We don’t just offer solutions—we learn how your company operates,
+              then build AI infrastructure tailored to you.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.25} amount={0.2}>

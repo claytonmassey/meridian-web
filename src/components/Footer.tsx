@@ -8,8 +8,8 @@ const footerLinks = {
     { href: "#", label: "Pricing" },
   ],
   company: [
-    { href: "#about", label: "Why Meridian" },
-    { href: "#", label: "Blog" },
+    { href: "#why-meridian", label: "Why Meridian" },
+    { href: "#about", label: "How we work" },
     { href: "#contact", label: "Contact" },
   ],
   legal: [
@@ -26,9 +26,8 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo size="footer" className="text-slate-900 dark:text-white" />
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-              We design and deploy AI-powered operational platforms that
-              integrate into business workflows—helping organizations move from
-              experimentation to real-world deployment.
+              We monitor how your company operates and build tailored AI
+              solutions—not off-the-shelf products.
             </p>
           </div>
           <div>

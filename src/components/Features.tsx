@@ -44,8 +44,9 @@ export function Features() {
           </h2>
           <ScrollReveal amount={0.2} delay={0.05}>
             <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 dark:text-slate-400">
-              Document intelligence, workflow automation, and AI-driven decision
-              support—built to operate inside your business from day one.
+              We build document intelligence, workflow automation, and
+              AI-driven decision support—tailored to how you operate, so it
+              runs inside your business from day one.
             </p>
           </ScrollReveal>
         </div>

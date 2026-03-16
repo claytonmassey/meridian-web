@@ -5,24 +5,24 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 const gapPoints = [
   {
-    title: "Pressure to show ROI",
+    title: "One-size-fits-all platforms",
     description:
-      "Leadership needs clear business impact—revenue, cost savings, and risk reduction—not pilot metrics or model benchmarks.",
+      "Big providers push products built for everyone—so they fit no one. Your operations get bent to the tool, not the other way around.",
   },
   {
-    title: "Operational readiness",
+    title: "Solutions before understanding",
     description:
-      "AI must plug into existing ERP, CRM, and workflows without lengthy integrations or rip-and-replace projects.",
+      "They lead with what they sell. Nobody spends time learning how your business really works, where the friction is, or what you actually need.",
   },
   {
-    title: "Governance and compliance",
+    title: "Deploy and disappear",
     description:
-      "Enterprise requirements for security, auditability, and control can’t be an afterthought when scaling AI.",
+      "Implementation ends at go-live. No deep integration with how you operate, no ongoing tuning to how your company changes.",
   },
   {
-    title: "Moving from pilots to production",
+    title: "The real problem goes unsolved",
     description:
-      "Proof of concept is one thing; running AI in live processes, 24/7, with reliability and support is another.",
+      "You’re left with new software and the same operational gaps. The bottleneck was never “we need another solution”—it was “we need something built for us.”",
   },
 ];
 
@@ -34,16 +34,16 @@ export function AdoptionGap() {
     >
       <div className="mx-auto max-w-6xl px-6">
         <AnimateLetters
-          text="The enterprise AI gap"
+          text="Solutions aren’t the problem"
           as="h2"
           className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl"
           amount={0.2}
         />
         <ScrollReveal amount={0.2} delay={0.05}>
           <p className="mt-3 max-w-2xl text-base text-slate-400">
-            Organizations are under pressure to deploy AI that drives revenue,
-            reduces cost, and fits into how the business already operates—yet
-            most initiatives stall between pilot and production.
+            Large vendors sell solutions. They rarely address the real
+            problem—how your company actually runs. So you get tools, not
+            transformation.
           </p>
         </ScrollReveal>
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -67,11 +67,12 @@ export function AdoptionGap() {
         </div>
         <ScrollReveal amount={0.2} delay={0.2}>
           <p className="mt-8 max-w-2xl text-base text-slate-400">
-            The result: experiments that don’t scale, and business leaders still
-            waiting for{" "}
+            We do the opposite: we come in,{" "}
             <strong className="font-semibold text-white">
-              AI that runs inside the business—not beside it.
+              monitor how your company operates
             </strong>
+            , and build tailored solutions that fit the way you work—not the
+            other way around.
           </p>
         </ScrollReveal>
       </div>
